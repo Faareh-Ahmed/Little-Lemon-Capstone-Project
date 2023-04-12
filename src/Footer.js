@@ -1,14 +1,23 @@
 import React from 'react';
+import './Footer.css';
+import footerLogo from './footer-logo.png';
 
 function Footer() {
-  return (
+  return ( 
     <footer>
-      <div className="contact">
-        <h3>Contact Us</h3>
-        <p>123 Main Street</p>
-        <p>Chicago, USA</p>
-        <p>Phone: (123) 456-7890</p>
-        <p>Email: littlelemon@gmail.com</p>
+      <div className="logo-container">
+        <div className="logo">
+          <img src={footerLogo} alt="Little Lemon Logo" />
+        </div>
+        <div className="contact-container">
+          <div className="contact">
+            <h3>Contact Us</h3>
+            <p>123 Main Street</p>
+            <p>Chicago, USA</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: littlelemon@gmail.com</p>
+          </div>
+        </div>
       </div>
       <div className="social">
         <h3>Follow Us</h3>
@@ -28,10 +37,7 @@ function Footer() {
           <li><a href="Login">Login</a></li>
         </ul>
       </nav>
-      <div className="logo">
-        <img src="footer-logo.png" alt="Little Lemon Logo" />
-        <p>Copyright © 2023 Little Lemon</p>
-      </div>
+      <p className="copy">&copy; 2023 Little Lemon</p>
     </footer>
   );
 }

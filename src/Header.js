@@ -1,13 +1,25 @@
 import React from 'react';
-import logo from './Little-lemon-logo.png';
+
+
+import './Header.css';
 
 function Header() {
   return (
     <header>
-      <img src={logo} alt="Little Lemon logo" width="100" height="100" />
-      // Other header content goes here
+      <section>
+        <article>
+          <h1>Little Lemon</h1>
+          <h4>Chicago</h4>
+          <p>Little Lemon is a Food Restaurant famous for its Traditional
+            as well as International Food varities
+          </p>
+          <button className="reserve-button">Reserve a Table</button>
+        </article>
+        <img src="images/images/headerrestaurant.jpg" alt="Little Lemon Logo" />
+      </section>
     </header>
   );
 }
+
 
 export default Header;
