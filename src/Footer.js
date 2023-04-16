@@ -1,13 +1,12 @@
 import React from 'react';
 import './Footer.css';
-import footerLogo from './footer-logo.png';
 
 function Footer() {
   return ( 
     <footer>
       <div className="logo-container">
         <div className="logo">
-          <img src={footerLogo} alt="Little Lemon Logo" />
+          <img src="images/images/footer-logo.png" alt="Little Lemon Logo" />
         </div>
         <div className="contact-container">
           <div className="contact">
@@ -41,5 +40,4 @@ function Footer() {
     </footer>
   );
 }
-
 export default Footer;
