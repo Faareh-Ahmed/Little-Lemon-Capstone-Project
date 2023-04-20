@@ -1,42 +1,74 @@
 import React from 'react';
+import Navlogo from './images/Nav-logo.png';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
   return ( 
     <footer>
-      <div className="logo-container">
-        <div className="logo">
-          <img src="images/images/footer-logo.png" alt="Little Lemon Logo" />
-        </div>
-        <div className="contact-container">
-          <div className="contact">
-            <h3>Contact Us</h3>
-            <p>123 Main Street</p>
-            <p>Chicago, USA</p>
-            <p>Phone: (123) 456-7890</p>
-            <p>Email: littlelemon@gmail.com</p>
-          </div>
-        </div>
-      </div>
-      <div className="social">
-        <h3>Follow Us</h3>
-        <ul>
-          <li><a href="https://www.facebook.com">Facebook</a></li>
-          <li><a href="https://www.twitter.com">Twitter</a></li>
-          <li><a href="https://www.instagram.com">Instagram</a></li>
-        </ul>
-      </div>
-      <nav className="doormat">
-        <ul>
-          <li><a href="home">Home</a></li>
-          <li><a href="about">About Us</a></li>
-          <li><a href="Menu">Our Menu</a></li>
-          <li><a href="Reservation">Reserve a Table</a></li>
-          <li><a href="OrderOnline">Online Order</a></li>
-          <li><a href="Login">Login</a></li>
-        </ul>
-      </nav>
-      <p className="copy">&copy; 2023 Little Lemon</p>
+      <menu>
+        <li className="img-footer">
+          <img
+            src={Navlogo}
+            alt="Little Lemon logo"
+          ></img> 
+        </li>
+        <li className="contact">
+          <h1 className="footer-header">Navigation</h1>
+          <ul className="footer-links">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            
+            <Link to="/reservation">Reservations</Link>
+            <Link to="/order-online">Order</Link>
+            <Link to="/login">Login</Link>
+          </ul>
+        </li>
+
+        <li>
+          <h1 className="footer-header">Contact</h1>
+          <ul className="footer-links">
+            <li>2395 Maldove Way,</li>
+            <li>Chicago Illinois</li>
+            <br></br>
+            <li>(629)-243-6827</li>
+            <br></br>
+            <a
+              href="mailto: info@littlelemon.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              info@littlelemon.com
+            </a>
+          </ul>
+        </li>
+        <li>
+          <h1 className="footer-header">Connect</h1>
+          <ul className="footer-links">
+            <a
+              href="https://www.facebook.com/thelittlelemonshop/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/littlelemonmoon/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=3Li-FfypZYE"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Join us!
+            </a>
+          </ul>
+        </li>
+      </menu>
     </footer>
   );
 }
