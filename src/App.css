@@ -480,3 +480,64 @@ Link:link {
   object-fit: cover;
 }
 
+.reserve-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.reserve-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* add this line to center the form inputs */
+  align-items: center; /* add this line to center the form inputs */
+  max-width: 400px;
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+label{
+  margin-bottom: 0.5rem;
+}
+
+input {
+  margin-bottom: 1rem; /* add this line to add spacing between form inputs */
+}
+
+.reserve-form button {
+  background-color: #f4ce14;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reserve-form button:hover {
+  background-color: #495e57;
+}
+
+.message-pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 999;
+}
+
+.error-message{
+  color: rgb(255, 0, 0);
+}
